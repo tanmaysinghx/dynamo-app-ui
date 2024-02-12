@@ -1,4 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 import {
   Stepper,
   initTE,
@@ -14,10 +15,18 @@ import {
 })
 export class OnboardingScreenComponent {
 
-  constructor() { }
+  constructor(
+    private router: Router,
+  ) { }
 
   ngOnInit() {
+    localStorage.setItem("onboardingFlag", "NO");
     initTE({ Stepper, Ripple, Input, Popconfirm });
+  }
+
+  acceptAndContinue() {
+    localStorage.setItem("onboardingFlag", "YES");
+    this.router.navigate(['../dashboard']);
   }
 
 }

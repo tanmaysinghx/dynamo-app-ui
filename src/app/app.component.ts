@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'dynamo-app-ui';
+
+  onboardingFlag: any  = "NO";
+
+  constructor() {}
+
+  ngOnInit() {
+    this.getLocalStorageData();
+  }
+
+  getLocalStorageData() {
+    this.onboardingFlag = localStorage.getItem("onboardingFlag");
+  }
 }

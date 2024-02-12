@@ -1,3 +1,5 @@
 <app-header></app-header>
 <router-outlet></router-outlet>
-<!-- <app-side-nav></app-side-nav> -->
+<div *ngIf="onboardingFlag == 'YES'">
+    <app-side-nav></app-side-nav>
+</div>
