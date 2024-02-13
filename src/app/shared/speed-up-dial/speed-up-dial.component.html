@@ -1,1 +1,11 @@
-<p>speed-up-dial works!</p>
+<div class="speed-dial">
+    <button
+      *ngFor="let action of actions"
+      class="action"
+      [class.active]="action.active"
+      (click)="toggleAction(action)"
+    >
+      <i class="icon" [class]="action.icon"></i>
+    </button>
+  </div>
+  

@@ -1,0 +1,33 @@
+.speed-dial {
+    position: fixed;
+    top: 50%;
+    right: 4px;
+    transform: translateY(-50%);
+}
+
+.action {
+    background-color: #3490dc;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #2779bd;
+    }
+
+    &.active {
+        background-color: #38a169;
+    }
+
+    .icon {
+        font-size: 1.5rem;
+    }
+}

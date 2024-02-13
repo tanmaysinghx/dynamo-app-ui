@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class CreateGroupComponent {
 
+  constructor() {}
+
+  ngOnInit() {
+    console.log("Hello")
+  }
 }

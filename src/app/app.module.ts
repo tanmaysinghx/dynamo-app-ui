@@ -18,6 +18,8 @@ import { EditTeamComponent } from './components/team/edit-team/edit-team.compone
 import { ViewTeamComponent } from './components/team/view-team/view-team.component';
 import { ViewGroupComponent } from './components/group/view-group/view-group.component';
 import { OnboardingCheckGuard } from './core/guards/onboarding-check.guard';
+import { BreadcrumpComponent } from './shared/breadcrump/breadcrump.component';
+import { PageInfoComponent } from './shared/page-info/page-info.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,8 @@ import { OnboardingCheckGuard } from './core/guards/onboarding-check.guard';
     EditTeamComponent,
     ViewTeamComponent,
     ViewGroupComponent,
+    BreadcrumpComponent,
+    PageInfoComponent,
   ],
   imports: [
     BrowserModule,
