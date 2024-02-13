@@ -1,4 +1,9 @@
 import { Component } from '@angular/core';
+import {
+  Ripple,
+  Input,
+  initTE,
+} from "tw-elements";
 
 @Component({
   selector: 'app-view-group',
@@ -7,4 +12,9 @@ import { Component } from '@angular/core';
 })
 export class ViewGroupComponent {
 
+  constructor() {}
+
+  ngOnInit() {
+    initTE({ Ripple, Input });
+  }
 }

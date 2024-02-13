@@ -4,12 +4,14 @@ import { OnboardingScreenComponent } from './components/onboarding-screen/onboar
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { OnboardingCheckGuard } from './core/guards/onboarding-check.guard';
 import { CreateGroupComponent } from './components/group/create-group/create-group.component';
+import { ViewGroupComponent } from './components/group/view-group/view-group.component';
 
 const routes: Routes = [
   { path: 'onboarding-screen', component: OnboardingScreenComponent },
   { path: 'dashboard/:jwt-token', component: DashboardComponent, canActivate: [OnboardingCheckGuard] },
   { path: 'dashboard', component: DashboardComponent, canActivate: [OnboardingCheckGuard] },
   { path: 'create-group', component: CreateGroupComponent },
+  { path: 'view-group', component: ViewGroupComponent },
 ];
 
 @NgModule({
