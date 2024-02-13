@@ -15,6 +15,7 @@ export class SpeedUpDialComponent {
     { icon: 'fas fa-home', active: false },
     { icon: 'fas fa-envelope', active: false },
     { icon: 'fas fa-bell', active: false },
+    { icon: 'fas fa-bell', active: false },
   ];
 
   toggleAction(action: SpeedDialAction): void {

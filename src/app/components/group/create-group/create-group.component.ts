@@ -1,4 +1,9 @@
 import { Component } from '@angular/core';
+import {
+  Ripple,
+  Input,
+  initTE,
+} from "tw-elements";
 
 @Component({
   selector: 'app-create-group',
@@ -10,6 +15,6 @@ export class CreateGroupComponent {
   constructor() {}
 
   ngOnInit() {
-    console.log("Hello")
+    initTE({ Ripple, Input });
   }
 }
