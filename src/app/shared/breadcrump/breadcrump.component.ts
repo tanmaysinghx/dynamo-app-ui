@@ -9,11 +9,18 @@ export class BreadcrumpComponent {
 
   sectionArray: any = [];
   sectionArrayLastElement: any;
+  onboardingFlag: boolean = false;
 
   constructor() { }
 
   ngOnInit() {
     this.getCurrentURL();
+    let flag = localStorage.getItem("onboarding-flag");
+    if (flag == "false") {
+      this.onboardingFlag = false;
+    } else if (flag == "true") {
+      this.onboardingFlag = true;
+    }
   }
 
   getCurrentURL() {

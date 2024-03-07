@@ -20,12 +20,10 @@ export class OnboardingScreenComponent {
   ) { }
 
   ngOnInit() {
-    localStorage.setItem("onboardingFlag", "NO");
     initTE({ Stepper, Ripple, Input, Popconfirm });
   }
 
   acceptAndContinue() {
-    localStorage.setItem("onboardingFlag", "YES");
     this.router.navigate(['../dashboard']);
   }
 

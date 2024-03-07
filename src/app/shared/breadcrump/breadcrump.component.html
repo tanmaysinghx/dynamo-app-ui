@@ -1,5 +1,5 @@
 <!--Breadcrump component-->
-<div class="main-card">
+<div class="main-card" *ngIf="onboardingFlag">
     <nav class="w-full rounded-md bg-neutral-100 px-5 py-3 dark:bg-neutral-600">
         <ol class="list-reset flex">
             <li *ngFor="let elements of sectionArray">

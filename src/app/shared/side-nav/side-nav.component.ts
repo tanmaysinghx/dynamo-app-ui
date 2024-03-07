@@ -13,12 +13,19 @@ import {
 export class SideNavComponent {
 
   sideNavFlag: boolean = false;
+  onboardingFlag: boolean = false;
 
   constructor() { }
 
   ngOnInit() {
     initTE({ Sidenav, Ripple });
     this.toggleSideNav();
+    let flag = localStorage.getItem("onboarding-flag");
+    if (flag == "false") {
+      this.onboardingFlag = false;
+    } else if (flag == "true") {
+      this.onboardingFlag = true;
+    }
   }
 
   toggleSideNav() {

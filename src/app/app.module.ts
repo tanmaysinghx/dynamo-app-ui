@@ -20,6 +20,8 @@ import { ViewGroupComponent } from './components/group/view-group/view-group.com
 import { OnboardingCheckGuard } from './core/guards/onboarding-check.guard';
 import { BreadcrumpComponent } from './shared/breadcrump/breadcrump.component';
 import { PageInfoComponent } from './shared/page-info/page-info.component';
+import { MainService } from './main.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -42,9 +44,10 @@ import { PageInfoComponent } from './shared/page-info/page-info.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [OnboardingCheckGuard],
+  providers: [OnboardingCheckGuard, MainService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
