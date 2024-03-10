@@ -8,8 +8,8 @@ import { ViewGroupComponent } from './components/group/view-group/view-group.com
 
 const routes: Routes = [
   { path: 'onboarding-screen', component: OnboardingScreenComponent },
-  { path: 'dashboard/:jwt-token', component: DashboardComponent, canActivate: [OnboardingCheckGuard] },
-  { path: 'dashboard', component: DashboardComponent, canActivate: [OnboardingCheckGuard] },
+  { path: 'dashboard/:jwt-token', component: DashboardComponent },
+  { path: 'dashboard', component: DashboardComponent },
   { path: 'create-group', component: CreateGroupComponent },
   { path: 'view-group', component: ViewGroupComponent },
 ];

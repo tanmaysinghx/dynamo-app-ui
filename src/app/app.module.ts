@@ -22,6 +22,7 @@ import { BreadcrumpComponent } from './shared/breadcrump/breadcrump.component';
 import { PageInfoComponent } from './shared/page-info/page-info.component';
 import { MainService } from './main.service';
 import { HttpClientModule } from '@angular/common/http';
+import { DashboardService } from './components/services/dashboard.service';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [OnboardingCheckGuard, MainService],
+  providers: [OnboardingCheckGuard, MainService, DashboardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

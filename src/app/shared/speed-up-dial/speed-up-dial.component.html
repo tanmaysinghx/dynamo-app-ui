@@ -1,4 +1,4 @@
-<div class="speed-dial">
+<div class="speed-dial" *ngIf = "onboardingFlag">
     <button
       *ngFor="let action of actions"
       class="action"

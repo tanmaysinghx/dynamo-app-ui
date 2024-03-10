@@ -11,8 +11,8 @@ export class OnboardingCheckGuard implements CanActivate {
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    const onboardingFlag = localStorage.getItem("onboarding-flag");
-
+    const onboardingFlag = sessionStorage.getItem("onboarding-flag");
+    console.log(onboardingFlag)
     if (onboardingFlag == "true") {
       return true;
     } else if (onboardingFlag == "false") {
@@ -21,6 +21,7 @@ export class OnboardingCheckGuard implements CanActivate {
     } else {
       return false;
     }
+    //return true;
   }
 
 }

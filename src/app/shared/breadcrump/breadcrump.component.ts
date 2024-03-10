@@ -15,7 +15,7 @@ export class BreadcrumpComponent {
 
   ngOnInit() {
     this.getCurrentURL();
-    let flag = localStorage.getItem("onboarding-flag");
+    let flag = sessionStorage.getItem("onboarding-flag");
     if (flag == "false") {
       this.onboardingFlag = false;
     } else if (flag == "true") {

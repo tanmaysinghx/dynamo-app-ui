@@ -21,6 +21,14 @@ export class OnboardingScreenComponent {
 
   ngOnInit() {
     initTE({ Stepper, Ripple, Input, Popconfirm });
+    this.checkOnboardingStatus();
+  }
+
+  checkOnboardingStatus() {
+    let onBoardingFlag = sessionStorage.getItem("onboarding-flag");
+    if (onBoardingFlag == "true") {
+      this.router.navigate(['/dashboard']);
+    }
   }
 
   acceptAndContinue() {
