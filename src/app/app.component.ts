@@ -7,7 +7,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'dynamo-app-ui';
+  title = 'dynamo-app-ui-1727';
 
   constructor(
     private route: ActivatedRoute,

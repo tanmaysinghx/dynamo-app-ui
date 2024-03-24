@@ -1,9 +1,9 @@
 {
-  "name": "dynamo-app-ui",
+  "name": "dynamo-app-ui-1727",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --port 2508",
+    "start": "ng serve --port 1727",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"

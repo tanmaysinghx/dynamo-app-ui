@@ -12,9 +12,16 @@ import {
 })
 export class HeaderComponent {
   
+  loggedInUser: any;
+
   constructor() {}
 
   ngOnInit() {
     initTE({ Collapse, Dropdown });
+    this.getSessionData();
+  }
+
+  getSessionData() {
+    this.loggedInUser = sessionStorage.getItem("display-name");
   }
 }
